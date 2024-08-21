@@ -17,4 +17,4 @@
     RUN useradd runtime
     USER runtime
 
-    ENTRYPOINT ["java", "Dserver.port=${PORT}", "-jar", "app.jar"]
+    ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-jar", "app.jar"]
